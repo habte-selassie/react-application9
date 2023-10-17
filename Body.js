@@ -41,12 +41,12 @@ const Navigation = () => {
       <div style={{marginTop:'10px',backgroundColor:'#dadde6',height:'1200px'}}>
   <div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-      <FeedIcon sx={{marginLeft:'40px'}} />
-      <h3 style={{ marginLeft: '10px',color:'#0c063b' }}>Find the right visa for you!</h3>
+      <FeedIcon sx={{marginLeft:'70px'}} />
+      <h3 style={{ marginLeft: '20px',color:'#0c063b' }}>Find the right visa for you!</h3>
       </div>
    <div>
 
-      <Card sx={{ minWidth: 275, marginTop:'40px',marginLeft:'40px',
+      <Card sx={{ minWidth: 275, marginTop:'40px',marginLeft:'70px',
       backgroundColor:'white',height:'80px'}}>
       <CardContent>
       <Typography sx={{ fontSize: 24,marginTop:'10px', }}>
@@ -74,8 +74,8 @@ const Navigation = () => {
     </Card>
   </div>
     
-<div style={{ width: '100vw', height: '100vh' }}> {/* Set the container to full viewport width and height */}
-  <div style={{ height: 'calc(100% - 48px)', width: '100%',marginLeft:'40px',marginTop:'20px', backgroundColor:'white' }}> {/* Set the height of the container (subtract any header/footer height if present) */}
+<div style={{ width: '100vw', height: '100vh', }}> {/* Set the container to full viewport width and height */}
+  <div style={{ height: 'calc(100% - 48px)', width: '100%',marginLeft:'64px',marginTop:'20px', backgroundColor:'white' }}> {/* Set the height of the container (subtract any header/footer height if present) */}
     <DataGrid
       rows={rows1}
       columns={columns1}
