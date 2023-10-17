@@ -19,6 +19,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers,faClock,faComment,faHeart,faBriefcase,faMedal as faSharpMedal} from "@fortawesome/free-solid-svg-icons";
 import MenuItem from "@mui/material/MenuItem";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import BackGroundImage from './../src/svg/svgviewer-png-output.png'
 import TimerComponent from "./timer";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
@@ -58,7 +59,20 @@ const birthplaces = places.map((place, index) => ({
   
   return (
     <>
-    <div style={{marginTop:'40px'}}>
+    <div 
+    style={{
+        marginTop: "40px",
+        backgroundImage: `url(${ BackGroundImage})`, // Set GovAssist image as background
+        // backgroundSize: "cover", // Make sure the image covers the entire container
+        backgroundRepeat: "no-repeat", 
+        backgroundPosition: "center", 
+        backgroundPositionY:'10px'
+        backgroundSize: "100%",
+        height:"2000px",
+        minHeight: "100vh", 
+        color: "white", 
+        padding: "20px"
+      }}>
       <Card
         sx={{
           width: "100%",
