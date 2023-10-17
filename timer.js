@@ -33,30 +33,57 @@ const ContainerStyled = styled.section`
   }
 `;
 
-// const WrapperStyled = styled.div`
+const CounterStyled = styled.div`
+  background: #181b3b; /* Set background for the timer boxes */
+  border-radius: 1rem;
+  color:'red';
+  ${'' /* color: var(--color-counter); */}
+  display: flex;
+  flex-direction: column;
+  font-family: "JetBrains Mono", mono;
+  font-size: clamp(0.45rem, 1.8vw, 1.2rem); /* Adjusted font size */
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 10px 0px 0px 10px;
+  text-align: center;
+  margin-left:-2px;
+  padding: 0.5vw 1vw; /* Adjusted padding for the timer boxes */
+  margin: 10 auto; /* Center the timer box on the page */
+  max-width: 1.74rem; /* Set the fixed width for the timer box */
 
-//   display: grid;
-//   grid-template-columns: repeat(2, minmax(0, 1fr));
-//   gap: 1rem;
+  h2 {
+    color:'red';
+    ${'' /* color: var(--color-heading); */}
+    font-family: var(--font-family-heading);
+    font-size: 1.05rem; /* Adjusted font size for heading */
+    font-weight: 300;
+    letter-spacing: 0.10em;
+    margin: 0.2rem 0 0;
+    text-transform: uppercase;
+  }
 
-//   @media (min-width: 35.5em) {
-//     grid-template-columns: repeat(4, minmax(0, 1fr));
-//     gap: 0 2rem;
-//   }
-// `;
+  p {
+    color:'red';
+    ${'' /* color: var(--color-heading); */}
+    font-family: var(--font-family-heading);
+    font-size: 0.56rem; /* Adjusted font size for subheading */
+    padding-right: 10px;
+    margin: -0.1rem 0 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+`;
 
 const WrapperStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.5rem; /* Adjusted the gap between the counter boxes */
-  max-width: 20rem; /* Set a maximum width for the counter boxes */
+  gap: 0.25rem; /* Adjusted the gap between the counter boxes */
   margin: auto; /* Center the counter boxes on the page */
 
   @media (min-width: 35.5em) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 `;
-
 
 const DateStyled = styled.header`
   margin-bottom: 2rem;
@@ -72,40 +99,6 @@ const DateStyled = styled.header`
     text-transform: uppercase;
   }
 `;
-const CounterStyled = styled.div`
-  background: rgba(25, 25, 112, 0.8); /* Set background for the timer boxes */
-  border-radius: 1rem;
-  color: var(--color-counter);
-  display: flex;
-  flex-direction: column;
-  font-family: "JetBrains Mono", mono;
-  font-size: clamp(0.2rem, 6vw, 2rem);
-  font-weight: 100;
-  line-height: 1;
-  text-align: center;
-  padding: 1vw 2vw;
-  margin-left: -15px;
-
-  h2 {
-    color: var(--color-heading);
-    font-family: var(--font-family-heading);
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: .15em;
-    margin: 0.4rem 0 0;
-    text-transform: uppercase;
-  }
-
-  p {
-    color: var(--color-heading);
-    font-family: var(--font-family-heading);
-    font-size: 0.8rem;
-    padding-right: 20px;
-    margin: -0.2rem 0 0;
-    text-transform: uppercase;
-    text-align: center;
-  }
-`;
 
 const Counter = ({ displayValue, label }) => (
   <CounterStyled>
@@ -113,10 +106,6 @@ const Counter = ({ displayValue, label }) => (
     <p>{label}</p>
   </CounterStyled>
 );
-
-
-
-
 
 const generateTimeDisplay = () => {
   const targetDate = new Date("October 16, 2023").getTime(); // Target date is October 16, 2023
@@ -129,7 +118,6 @@ const generateTimeDisplay = () => {
     seconds: Math.floor((runway % (1000 * 60)) / 1000)
   };
 };
-
 
 const TimerComponent = () => {
   const [timeDisplay, setTimeDisplay] = useState(generateTimeDisplay());

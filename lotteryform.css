@@ -1,7 +1,8 @@
 .firstbox {
     height: 1000px;
     background-color:#1d2044;
-    width:48%
+    width:48%;
+    
 }
     
     .secondbox {
@@ -10,7 +11,7 @@
     /* width: 56.25%; */
     margin-left: 680px;
     margin-top: 60rem;
-    color: #1d2044;
+    color: #181b3b;
    
     
    

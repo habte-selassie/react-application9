@@ -38,7 +38,7 @@ import { DataGrid } from '@mui/x-data-grid';
   
 const Navigation = () => { 
     return (
-      <div style={{marginTop:'70px'}}>
+      <div style={{marginTop:'10px',backgroundColor:'#dadde6',height:'1200px'}}>
   <div>
       <div style={{ display: 'flex', alignItems: 'center' }}>
       <FeedIcon sx={{marginLeft:'40px'}} />
@@ -46,7 +46,8 @@ const Navigation = () => {
       </div>
    <div>
 
-      <Card sx={{ minWidth: 275, marginTop:'0px',marginLeft:'40px',backgroundColor:'green',height:'80px'}}>
+      <Card sx={{ minWidth: 275, marginTop:'40px',marginLeft:'40px',
+      backgroundColor:'white',height:'80px'}}>
       <CardContent>
       <Typography sx={{ fontSize: 24,marginTop:'10px', }}>
       Mandatory Government Fees for green Cards
@@ -56,10 +57,11 @@ const Navigation = () => {
       </CardActions>
       <Button sx={{ 
       backgroundColor:'orangered', 
-      width:'150px',
-      height:'40px',
+      width:'160px',
+      height:'48px',
       marginLeft:'1000px', 
-      marginTop:'-140px'
+      marginTop:'-140px',
+      borderRadius:'10px'
       }} variant="contained">
 
      <h3 style={{
@@ -73,7 +75,7 @@ const Navigation = () => {
   </div>
     
 <div style={{ width: '100vw', height: '100vh' }}> {/* Set the container to full viewport width and height */}
-  <div style={{ height: 'calc(100% - 48px)', width: '100%',marginLeft:'40px',marginTop:'20px' }}> {/* Set the height of the container (subtract any header/footer height if present) */}
+  <div style={{ height: 'calc(100% - 48px)', width: '100%',marginLeft:'40px',marginTop:'20px', backgroundColor:'white' }}> {/* Set the height of the container (subtract any header/footer height if present) */}
     <DataGrid
       rows={rows1}
       columns={columns1}
@@ -83,7 +85,7 @@ const Navigation = () => {
   </div>
 </div>
 
-    <h3 style={{marginLeft:'800px'}}>Fees are subject to change, please use <Link href='www.google.com'>this calculator</Link> </h3>
+    <h3 style={{marginLeft:'800px',color:'grey'}}>Fees are subject to change, please use <Link sx={{color:'grey', textDecoration: 'underline'}} href='www.calculator.com'>this calculator</Link> </h3>
    
     <div>
       <Accordion sx={{marginLeft:'40px', height:'100px'}}>
