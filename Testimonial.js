@@ -93,7 +93,7 @@ const Testimonial = () => {
     const [value, setValue] = useState(2);
     const [hover, setHover] = useState(-1);
     return (
-    <div>
+    <div style={{marginLeft:'40px'}}>
 
    <div style={{ display: 'flex', alignItems: 'center', marginTop: '40px', marginLeft: '40px' }}>
      <StarIcon style={{ fontSize: '1.5rem', color: '#070d36', marginRight: '10px' }} />
@@ -159,7 +159,7 @@ const Testimonial = () => {
    </Stack>
    <div>
      {/* Other components */}
-     <Divider sx={{marginLeft:'-68px'}} variant="inset" component="li" />
+     <Divider sx={{marginLeft:'-88px'}} variant="inset" component="li" />
    <h4 style={{marginLeft:'480px', color:'gray'}}>March 20,2023</h4>
    <Box
      sx={{
@@ -191,11 +191,10 @@ const Testimonial = () => {
       <p style={{fontSize:'24px',fontWeight:'800px',marginTop:'40px',color:'gray'}}>Highly Recommended</p>
       </div>
    <p style={{marginTop:'40px',fontSize:'18px',maxWidth:'580px'}}>
-     Nikka was a very professional consultant, always ready to assist us each step of
-      <br/>
-    the  way, i was reminded of everything and I had to take with to the interview<br/>
-    and also later to pick my passport and my son's. Thanks once more, I cetainly recommended the service.</p>
-   <h3 style={{marginTop:'40px'}}>Date of experince: February 28,2023</h3>
+     Nikka was a very professional consultant, always ready to assist us each<br/>
+      step of the  way, i was reminded of everything and I had to take with to <br/> 
+    the interview and also later to pick my passport and my son's. Thanks once more, I cetainly recommended the service.</p>
+   <p style={{marginTop:'40px',fontSize:'20px'}}>Date of experince: February 28,2023</p>
 
       <Pagination  sx={{marginLeft:'480px',marginTop:'130px'}} count={3} size="large" />
 </div>
@@ -203,7 +202,7 @@ const Testimonial = () => {
   <Box 
   
   >
-      <Divider sx={{ marginLeft: '-20px' }} variant="inset" component="li" />
+      <Divider sx={{ marginLeft: '-60px' }} variant="inset" component="li" />
       <p style={{ fontSize: '44px', fontWeight: '300px', color: 'green', marginLeft: '50px', marginTop: '20px' }}>
         Let's keep in touch for news
       </p>

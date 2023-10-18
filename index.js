@@ -14,14 +14,12 @@ const rootElement = document.getElementById("root");
 
 ReactDOM.createRoot(rootElement).render(
   <>
- 
       <Navigation />    
       <Body /> 
-      <Testimonial />  
-      <Footer />   
+      <Testimonial />   
+      <Footer />    
       <LotteryForm />   
       <LotteryFormSteps />
-   
   </>
 );
 

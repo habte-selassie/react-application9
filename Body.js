@@ -38,15 +38,17 @@ import { DataGrid } from '@mui/x-data-grid';
   
 const Navigation = () => { 
     return (
-      <div style={{marginTop:'10px',backgroundColor:'#dadde6',height:'1200px'}}>
+      <div style={{marginTop:'-10px',backgroundColor:'#dadde6',height:'1240px'}}>
   <div>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
-      <FeedIcon sx={{marginLeft:'70px'}} />
-      <h3 style={{ marginLeft: '20px',color:'#0c063b' }}>Find the right visa for you!</h3>
+      <div style={{ display: 'flex', alignItems: 'center', marginTop:'10px' }}>
+      <FeedIcon sx={{marginLeft:'70px', marginTop:'40px'}} />
+      <h3 style={{ marginLeft: '20px',color:'#0c063b',marginTop:'40px' }}>Find the right visa for you!</h3>
       </div>
    <div>
 
-      <Card sx={{ minWidth: 275, marginTop:'40px',marginLeft:'70px',
+      <Card sx={{ minWidth: 275,
+      width:'92%',
+       marginTop:'40px',marginLeft:'70px',
       backgroundColor:'white',height:'80px'}}>
       <CardContent>
       <Typography sx={{ fontSize: 24,marginTop:'10px', }}>
@@ -75,7 +77,7 @@ const Navigation = () => {
   </div>
     
 <div style={{ width: '100vw', height: '100vh', }}> {/* Set the container to full viewport width and height */}
-  <div style={{ height: 'calc(100% - 48px)', width: '100%',marginLeft:'64px',marginTop:'20px', backgroundColor:'white' }}> {/* Set the height of the container (subtract any header/footer height if present) */}
+  <div style={{ height: 'calc(100% - 48px)', width: '92%',marginLeft:'64px',marginTop:'20px', backgroundColor:'white' }}> {/* Set the height of the container (subtract any header/footer height if present) */}
     <DataGrid
       rows={rows1}
       columns={columns1}
@@ -85,10 +87,10 @@ const Navigation = () => {
   </div>
 </div>
 
-    <h3 style={{marginLeft:'800px',color:'grey'}}>Fees are subject to change, please use <Link sx={{color:'grey', textDecoration: 'underline'}} href='www.calculator.com'>this calculator</Link> </h3>
+    <h3 style={{marginLeft:'800px',color:'grey',fontSize:'17px',marginTop:'-30px'}}>Fees are subject to change, please use <Link sx={{color:'grey', textDecoration: 'underline'}} href='www.calculator.com'>this calculator</Link> </h3>
    
-    <div>
-      <Accordion sx={{marginLeft:'40px', height:'100px'}}>
+    <div style={{marginTop:'40px',marginLeft:'30px'}}>
+      <Accordion sx={{marginLeft:'40px', height:'100px',width:'94%'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -105,7 +107,7 @@ const Navigation = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={{marginLeft:'40px', height:'100px'}}>
+      <Accordion sx={{marginLeft:'40px', height:'100px', width:'94%'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"

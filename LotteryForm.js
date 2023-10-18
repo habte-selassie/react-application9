@@ -23,9 +23,9 @@ const LotteryForm = () => {
     //   };
 
     return (
-    <div style={{marginTop:'180px'}}>
+    <div style={{marginTop:'100px'}}>
     
-    <div class="firstbox" style={{ backgroundColor:'#1d2044'}}>
+    <div class="firstbox" style={{ backgroundColor:'#1d2044',width:'49%',marginLeft:'60px'}}>
     <Box>
     <img alt='a' src={GovAssist} style={{width:'220px',height:'40px',marginLeft:'40px',marginTop:'40px'}} />
 <h1 className='a' style={{marginTop:'40px'}}> Electronic </h1> 
@@ -35,13 +35,13 @@ const LotteryForm = () => {
  <h1 className='c'> entry form </h1>
 <br/>
 
-<p className='first' style={{maxWidth:'600px',fontSize:'44px'}}>Here you will fill all </p>
-<p className='second' style={{maxWidth:'500px',fontSize:'44px'}}>your information to </p>
-<p className='third' style={{maxWidth:'500px',fontSize:'44px'}}>reach your dream</p>
+<p className='first' style={{maxWidth:'600px',fontSize:'40px',fontWeight:'400'}}>Here you will fill all </p>
+<p className='second' style={{maxWidth:'500px',fontSize:'40px',fontWeight:'400'}}>your information to </p>
+<p className='third' style={{maxWidth:'500px',fontSize:'40px',fontWeight:'400'}}>reach your dream</p>
 
  <div style={{ display: 'flex', alignItems: 'center',marginTop:'80px',marginLeft:'40px' }}>
   <Forward10Icon sx={{ fontSize: '40px', color: 'white' }} />
-  <p className='fourth' style={{ marginLeft: '10px' }}>10 minutes to finish</p>
+  <p className='fourth' style={{ marginLeft: '10px',marginTop:'-13px' }}>10 minutes to finish</p>
 </div>
 
     <Card sx={{ display: 'flex', background: 'linear-gradient(to right, white 2%, #1d2044 1%)',
@@ -66,12 +66,13 @@ const LotteryForm = () => {
 
 
 
-<div class="secondbox">
+
+<div class="secondbox" style={{border:'2px solid grey', backgroundColor: '#eee2e2;', marginLeft:'34.4rem',height: '800px',marginTop:'-50rem',width:'54%' }}>
 <Box sx={{backgroundColor:'blueblack', height:300}}>
     <Stack spacing={2} direction="row">
       
       <Box sx={{ width: 160 }}>
-      <Accordion sx={{width:'180px',marginLeft:'160px',marginTop:'180px'}}>
+      <Accordion sx={{width:'180px',marginLeft:'160px',marginTop:'40px'}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -91,9 +92,9 @@ const LotteryForm = () => {
 
     <Button sx={{ color:'white', width: 200, height:'50px', backgroundColor:'brown',marginTop:'-65px',marginLeft:'360px' }} variant="contained">Live Chat</Button>
      
-    <p style={{marginLeft:'-30px',marginTop:'200px',fontSize:'44px',fontWeight:'400px',color:'#080733'}}>Are you ready to begin?</p>
+    <p style={{marginLeft:'110px',marginTop:'140px',fontSize:'44px',fontWeight:'400px',color:'#080733'}}>Are you ready to begin?</p>
 
-    <Button sx={{fontSize:'20px',width:440,height:50,color:'white',backgroundColor:'green',borderRadius:'10px',marginLeft:'-20px'}} variant="contained" color="success">
+    <Button sx={{marginTop:'80px', fontSize:'20px',width:440,height:50,color:'white',backgroundColor:'green',borderRadius:'10px',marginLeft:'110px'}} variant="contained" color="success">
      Start!
      </Button>
 
@@ -102,9 +103,9 @@ const LotteryForm = () => {
     </Box>
       
 </div>
+</div>
     
-   
-    </div>
+  
   );
 
 }

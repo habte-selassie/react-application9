@@ -99,8 +99,8 @@ const LotteryFormSteps = () => {
           setActiveStep(0);
         };
     return (
-    <div style={{marginTop:'700px'}}>
-    <Box class="firstbox" sx={{backgroundColor:'slateblue'}}>
+    <div >
+    <Box class="firstbox" style={{ backgroundColor:'#1d2044',width:'38%',marginLeft:'60px',marginTop:'100px'}}>
 
 <img alt='a' src={GovAssist} style={{width:'220px',height:'40px',marginLeft:'40px',marginTop:'20px'}} />
           <Box sx={{ maxWidth: 400, marginLeft:'40px',marginTop:'28px'}}>
@@ -152,9 +152,12 @@ const LotteryFormSteps = () => {
             )}
           </Box>
     </Box>
-    
-   <div style={{marginLeft:'620px',marginTop:'-48rem'}}>
-     <Box sx={{ width: 160}}>
+
+
+    <div class="secondbox" style={{border:'2px solid grey', backgroundColor: '#eee2e2;', marginLeft:'34.4rem',height: '800px',marginTop:'-50rem',width:'54%' }}>
+
+   {/* <div style={{marginLeft:'620px',marginTop:'-48rem'}}> */}
+     <Box sx={{ width: 160, marginTop:'40px'}}>
       <Accordion 
       
       sx={{width:'180px',marginTop:'-8 rem', marginLeft:'180px'}}>
@@ -175,8 +178,8 @@ const LotteryFormSteps = () => {
     </Box>
     <Button sx={{ color:'white', width: 200, height:'50px', backgroundColor:'brown',marginTop:'-70px',marginLeft:'400px' }} variant="contained">Live Chat</Button>
     
-    <p style={{color:'#030a22', width: 400, height:'50px', fontSize:'48px',marginTop:'170px',marginLeft:'-20px'}}> 2.1. - Phone number</p>
-    <div>
+    <p style={{color:'#030a22', width: 600, height:'50px', fontSize:'48px',marginTop:'170px',marginLeft:'80px'}}> 2.1. - Phone number</p>
+    <div style={{marginLeft:'70px'}}>
       <FormControl sx={{ m: 1, minWidth: 80 }}>
         <InputLabel id="demo-simple-select-autowidth-label">Code</InputLabel>
         <Select
@@ -206,17 +209,18 @@ const LotteryFormSteps = () => {
       }}
     >
      <TextField
-      fullWidth
+      
       label="+1 604 123 4567"
+      sx= {{ fontSize: '28px', marginLeft:'80px',width:'400px'}}
       id="fullWidth"
       InputLabelProps={{
         position: 'end', // Position the label to the right
-        sx: { fontSize: '28px' }, // Set the font size of the label text
+        sx: { fontSize: '28px', marginLeft:'20px',width:'600px',marginTop:'-10px' }, // Set the font size of the label text
       }}
     />
     </Box>
-    <Button sx={{width:100,height:40,color:'white',backgroundColor:'grey',fontSize:'24px',fontWeight:'900px',marginLeft:'0px',marginTop:'20px'}} variant="contained" color="success">
-     <p style={{color:'white',marginLeft:'-20px'}}>OK</p> <CheckIcon />
+    <Button sx={{width:100,height:40,color:'white',backgroundColor:'grey',fontSize:'24px',fontWeight:'900px',marginLeft:'80px',marginTop:'10px'}} variant="contained" color="success">
+     <p style={{color:'white',marginLeft:'20px',marginTop:'10px'}}>OK</p> <CheckIcon />
      </Button>
        
     </div>
@@ -225,7 +229,7 @@ const LotteryFormSteps = () => {
       <div>
         <div style={{ display: 'inline-block', marginRight: '20px' }}>
           <Accordion expanded={expanded1} onChange={handleChange1} sx={{position:'absolute', color:'white', 
-          marginLeft:'1120px',width:'100px',marginTop:'100px',backgroundColor:'#7d87a7'}}>
+          marginLeft:'1080px',width:'100px',marginTop:'-200px',backgroundColor:'#1d2044'}}>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
@@ -241,7 +245,9 @@ const LotteryFormSteps = () => {
           </Accordion>
         </div>
         <div style={{ display: 'inline-block' }}>
-          <Accordion expanded={expanded2} onChange={handleChange2} sx={{backgroundColor:'#7d87a7', position:'absolute',marginTop:'100px',color:'white', marginLeft:'1000px',width:'100px'}}>
+          <Accordion expanded={expanded2} onChange={handleChange2}
+           sx={{backgroundColor:'#1d2044', position:'absolute',marginTop:'-200px',color:'white',
+            marginLeft:'960px',width:'100px'}}>
             <AccordionSummary
               expandIcon={<ExpandLessIcon /> }
               aria-controls="panel2a-content"
@@ -258,9 +264,10 @@ const LotteryFormSteps = () => {
         </div>
       </div>
 
-      <p style={{marginLeft:'840px',marginTop:'240px',fontSize:'15.8px',fontWeight:'400px',color:'#080733'}}>Copyright © 2016-2023 GovAssist, LLC All Rights Reserved</p>
+      <p style={{marginLeft:'800px',marginTop:'-70px',fontSize:'15.8px',fontWeight:'400px',color:'#080733'}}>Copyright © 2016-2023 GovAssist, LLC All Rights Reserved</p>
      
   </div>
+  // </div>
   );
 
 }

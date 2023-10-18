@@ -60,11 +60,12 @@ const birthplaces = places.map((place, index) => ({
     >
       <Card
         sx={{
-          width: "94%",
-          marginLeft: "40px",
+          width: "103%",
+          marginLeft: "-18px",
           color: "blue",
           backgroundColor: "#051d30",
-          height: "100px",
+          height: "130px",
+          marginTop:'-28px'
         }}
       >
         <CardContent>
