@@ -22,7 +22,7 @@ const Footer = () => {
 <Divider variant="inset" component="li" sx={{marginTop:'10px'}} />
 
 <p style={{color:'white',marginTop:'28px',marginLeft:'40px'}}>
-Disclaimer: GovAssist  is  ot  affiliated  with  any  United  States  government agency  or  department. Costs for consulting services do NOT include any government application, medical examination, filing, or biometric fees.
+Disclaimer: GovAssist  is  not  affiliated  with  any  United  States  government agency  or  department. Costs for consulting services do NOT include any government application, medical examination, filing, or biometric fees.
  This website does not provide legal advice and we are not a law firm. None of our customer service representatives are lawyers and they also do not provide legal advice. We are a private, internet-based travel and immigration consultancy provider dedicated to helping individuals travel to the United States. 
  You may apply by yourself directly at travel.state.gov or at uscis.gov.
 GovAssist is affiliated with the UT law firm GovAssist Legal which provides legal services on immigration matters. 

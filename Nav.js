@@ -36,16 +36,16 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 // );
 
 const Navigation = () => {
-  // const ITEM_HEIGHT = 48;
-  // const ITEM_PADDING_TOP = 8;
-  // const MenuProps = {
-  //   PaperProps: {
-  //     style: {
-  //       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-  //       width: 250,
-  //     },
-  //   },
-  // };
+  const ITEM_HEIGHT = 48;
+  const ITEM_PADDING_TOP = 8;
+  const MenuProps = {
+    PaperProps: {
+      style: {
+        maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+        width: 250,
+      },
+    },
+  };
 
 const places = [ "New York", "Paris","Tokyo","London","Sydney","Berlin","Rome","Dubai","Toronto","Rio de Janeiro",];
 
@@ -311,7 +311,7 @@ const birthplaces = places.map((place, index) => ({
         </TextField>
 
         <TextField
-  style={{ marginLeft: '30px',width:'10px', backgroundColor: '#eee6e6', marginTop: '20px',
+  style={{ marginLeft: '30px',width:'490px', backgroundColor: '#eee6e6', marginTop: '20px',
   // width: '490px' 
   }}
   id="outlined-select-currency"
