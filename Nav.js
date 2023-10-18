@@ -25,28 +25,10 @@ import TimerComponent from "./timer";
 // import { Route, Routes } from "react-router-dom";
 // import LotteryFormSteps from "./LotteryFormSteps";
 
-
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-// const bull = (
-//   <Box
-//     component="span"
-//     sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-//   ></Box>
-// );
-
 const Navigation = () => {
-  //const ITEM_HEIGHT = 48;
-  // const ITEM_PADDING_TOP = 8;
-  // const MenuProps = {
-  //   PaperProps: {
-  //     style: {
-  //       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-  //       width: 250,
-  //     },
-  //   },
-  // };
-
+ 
 const places = [ "New York", "Paris","Tokyo","London","Sydney","Berlin","Rome","Dubai","Toronto","Rio de Janeiro",];
 
 const birthplaces = places.map((place, index) => ({
@@ -189,31 +171,31 @@ const birthplaces = places.map((place, index) => ({
 
 </div>
 
-<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',marginTop:'-240px' }}>
+<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',marginTop:'-150px' }}>
   <div style={{ display: 'flex', alignItems: 'center', marginLeft:'40px' }}>
     <FontAwesomeIcon icon={faUsers} />
-    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560'}}>50,00 people and their families will Live, Work and Study
+    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560',marginTop:'20px'}}>50,00 people and their families will Live, Work and Study
     <br/> in the USA</p>
   </div>
   <div style={{ display: 'flex', alignItems: 'center', marginLeft:'40px' }}>
     <FontAwesomeIcon icon={faSharpMedal} rotation={180} />
-    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560'}}>OFFICIAL USA Government program</p>
+    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560', marginTop:'10px'}}>OFFICIAL USA Government program</p>
   </div>
   <div style={{ display: 'flex', alignItems: 'center', marginLeft:'40px' }}>
     <FontAwesomeIcon icon={faBriefcase} rotation={180} />
-    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560'}}>Your chance to WORK, LIVE & STUDY in USA </p>
+    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560', marginTop:'10px'}}>Your chance to WORK, LIVE & STUDY in USA </p>
   </div>
   <div style={{ display: 'flex', alignItems: 'center', marginLeft:'40px' }}>
     <FontAwesomeIcon icon={faClock} />
-    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560'}}>Simple registration within 5 minutes</p>
+    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560', marginTop:'10px'}}>Simple registration within 5 minutes</p>
   </div>
   <div style={{ display: 'flex', alignItems: 'center', marginLeft:'40px' }}>
     <FontAwesomeIcon icon={faComment} />
-    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560'}}>Personal support in every step</p>
+    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560', marginTop:'10px'}}>Personal support in every step</p>
   </div>
   <div style={{ display: 'flex', alignItems: 'center', marginLeft:'40px' }}>
     <FontAwesomeIcon icon={faHeart} />
-    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560'}}>Double chance for married people to win the Green Card</p>
+    <p style={{marginLeft:'20px',color:'purple',fontSize:'17px',fontWeight:'560', marginTop:'10px'}}>Double chance for married people to win the Green Card</p>
   </div>
 </div>
         
