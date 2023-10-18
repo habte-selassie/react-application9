@@ -311,7 +311,7 @@ const birthplaces = places.map((place, index) => ({
         </TextField>
 
         <TextField
-  style={{ marginLeft: '30px',width:'490px', backgroundColor: '#eee6e6', marginTop: '20px',
+  style={{ marginLeft: '30px',width:'490px', backgroundColor: 'white', marginTop: '20px',
   // width: '490px' 
   }}
   id="outlined-select-currency"
