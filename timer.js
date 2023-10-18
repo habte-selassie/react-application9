@@ -49,7 +49,7 @@ const CounterStyled = styled.div`
   margin-left:-2px;
   padding: 0.5vw 1vw; /* Adjusted padding for the timer boxes */
   margin: 10 auto; /* Center the timer box on the page */
-  max-width: 1.74rem; /* Set the fixed width for the timer box */
+  max-width: 2.98rem; /* Set the fixed width for the timer box */
 
   h2 {
     color:'red';
@@ -57,8 +57,8 @@ const CounterStyled = styled.div`
     font-family: var(--font-family-heading);
     font-size: 1.05rem; /* Adjusted font size for heading */
     font-weight: 300;
-    letter-spacing: 0.10em;
-    margin: 0.2rem 0 0;
+    letter-spacing: 0.20em;
+    margin: 0.3rem 0 0;
     text-transform: uppercase;
   }
 
@@ -67,8 +67,9 @@ const CounterStyled = styled.div`
     ${'' /* color: var(--color-heading); */}
     font-family: var(--font-family-heading);
     font-size: 0.56rem; /* Adjusted font size for subheading */
-    padding-right: 10px;
+    padding-right: 100px;
     margin: -0.1rem 0 0;
+    margin-left:-4.4px;
     text-transform: uppercase;
     text-align: center;
   }
