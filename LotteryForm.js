@@ -1,13 +1,13 @@
 import React from 'react';
 import GovAssist from './../src/svg/GovAssist-removebg-preview.png';
-import { Box, Divider, Link } from '@mui/material';
+import { Box} from '@mui/material';
 import './footer.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Forward10Icon from '@mui/icons-material/Forward10';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Flag from './../src/svg/united-states.png';
 import Typography from '@mui/material/Typography';
 import Accordion from '@mui/material/Accordion';
@@ -17,10 +17,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './lotteryform.css'
   
 const LotteryForm = () => { 
-    const [age, setAge] = useState('');
-    const handleChange = (event) => {
-        setAge(event.target.value);
-      };
+    // const [age, setAge] = useState('');
+    // const handleChange = (event) => {
+    //     setAge(event.target.value);
+    //   };
 
     return (
     <div style={{marginTop:'180px'}}>

@@ -24,14 +24,14 @@ const BoxWrapperStyled = styled.div`
   border-radius: 1rem; /* Rounded corners for the counter boxes */
 `;
 
-const ContainerStyled = styled.section`
-  margin: auto;
-  padding: 1rem;
+// const ContainerStyled = styled.section`
+//   margin: auto;
+//   padding: 1rem;
 
-  @media (min-width: 48em) {
-    padding: 4rem;
-  }
-`;
+//   @media (min-width: 48em) {
+//     padding: 4rem;
+//   }
+// `;
 
 const CounterStyled = styled.div`
   background: #181b3b; /* Set background for the timer boxes */
@@ -85,20 +85,20 @@ const WrapperStyled = styled.div`
   }
 `;
 
-const DateStyled = styled.header`
-  margin-bottom: 2rem;
+// const DateStyled = styled.header`
+//   margin-bottom: 2rem;
 
-  & h1 {
-    color: var(--color-heading);
-    font-family: var(--font-family-heading);
-    font-size: clamp(1rem, 2vw, 99rem);
-    font-weight: 300;
-    letter-spacing: 0.1875em;
-    margin: unset;
-    text-align: center;
-    text-transform: uppercase;
-  }
-`;
+//   & h1 {
+//     color: var(--color-heading);
+//     font-family: var(--font-family-heading);
+//     font-size: clamp(1rem, 2vw, 99rem);
+//     font-weight: 300;
+//     letter-spacing: 0.1875em;
+//     margin: unset;
+//     text-align: center;
+//     text-transform: uppercase;
+//   }
+// `;
 
 const Counter = ({ displayValue, label }) => (
   <CounterStyled>
@@ -147,6 +147,6 @@ export default TimerComponent
 const theWholeEnchilada = document.createElement("div");
 theWholeEnchilada.setAttribute("id", "theWholeEnchilada");
 document.documentElement.append(theWholeEnchilada);
-const app = document.querySelector("#theWholeEnchilada");
+//const app = document.querySelector("#theWholeEnchilada");
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import GovAssist from './../src/svg/GovAssist-removebg-preview.png';
-import { Box, Card, Divider, Link } from '@mui/material';
+import { Box, Card } from '@mui/material';
 import './footer.css'
 import Button from '@mui/material/Button';
 import InputLabel from '@mui/material/InputLabel';
@@ -36,7 +36,7 @@ const LotteryFormSteps = () => {
       setExpanded2((prevExpanded) => !prevExpanded);
     };
   
-    const [expanded, setExpanded] = React.useState(false);
+    // const [expanded, setExpanded] = React.useState(false);
   
     const [countryCode, setCountryCode] = useState('');
 

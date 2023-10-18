@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+//import { useState } from "react";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -21,31 +21,31 @@ import MenuItem from "@mui/material/MenuItem";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import BackGroundImage from './../src/svg/svgviewer-png-output.png'
 import TimerComponent from "./timer";
-import LotteryForm from "./LotteryForm";
-import { Route, Routes } from "react-router-dom";
-import LotteryFormSteps from "./LotteryFormSteps";
+// import LotteryForm from "./LotteryForm";
+// import { Route, Routes } from "react-router-dom";
+// import LotteryFormSteps from "./LotteryFormSteps";
 
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
-  ></Box>
-);
+// const bull = (
+//   <Box
+//     component="span"
+//     sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+//   ></Box>
+// );
 
 const Navigation = () => {
-  const ITEM_HEIGHT = 48;
-  const ITEM_PADDING_TOP = 8;
-  const MenuProps = {
-    PaperProps: {
-      style: {
-        maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-        width: 250,
-      },
-    },
-  };
+  // const ITEM_HEIGHT = 48;
+  // const ITEM_PADDING_TOP = 8;
+  // const MenuProps = {
+  //   PaperProps: {
+  //     style: {
+  //       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
+  //       width: 250,
+  //     },
+  //   },
+  // };
 
 const places = [ "New York", "Paris","Tokyo","London","Sydney","Berlin","Rome","Dubai","Toronto","Rio de Janeiro",];
 
@@ -311,7 +311,9 @@ const birthplaces = places.map((place, index) => ({
         </TextField>
 
         <TextField
-  style={{ marginLeft: '30px',width:'10px', backgroundColor: '#eee6e6', marginTop: '20px', width: '490px' }}
+  style={{ marginLeft: '30px',width:'10px', backgroundColor: '#eee6e6', marginTop: '20px',
+  // width: '490px' 
+  }}
   id="outlined-select-currency"
   select
   label="Martial Status"

@@ -2,7 +2,7 @@ import React from 'react';
 import GovAssist from './../src/svg/GovAssist-removebg-preview.png';
 import { Box, Divider, Link } from '@mui/material';
 import './footer.css'
-import Typography from '@mui/material/Typography';
+
 
 const Footer = () => { 
     return (

@@ -6,9 +6,9 @@ import Testimonial from "./Testimonial";
 import Footer from "./Footer";
 import LotteryForm from "./LotteryForm";
 import LotteryFormSteps from "./LotteryFormSteps";
-import App from "./App";
+//import App from "./App";
 //import { Router } from "react-router-dom";
-import { Router } from "react-router-dom";
+//import { Router } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
 

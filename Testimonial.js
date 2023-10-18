@@ -6,7 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ImageIcon from '@mui/icons-material/Image';
+//import ImageIcon from '@mui/icons-material/Image';
 import Divider from '@mui/material/Divider';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Rating from '@mui/material/Rating';
@@ -19,13 +19,13 @@ import Choi from './../src/svg/choi.jpeg'
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
+//import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
-import MenuIcon from '@mui/icons-material/Menu';
+//import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import Fab from '@mui/material/Fab';
-import NavigationIcon from '@mui/icons-material/Navigation';
+//import NavigationIcon from '@mui/icons-material/Navigation';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; // Import the right arrow icon
 import Pagination from '@mui/material/Pagination';
 import StarIcon from '@mui/icons-material/Star';
